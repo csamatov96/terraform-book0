@@ -23,3 +23,10 @@ variable "security_group_ids" {
      description = "List of security group IDs."
      default = ["sg-4f713c35", "sg-4f713c35", "sg-4f713c35"]
 }
+
+module "vpc_basic" {
+     source = "./vpc_basic"
+     name   = "web"
+     cidr   = "10.0.0.0/16"
+     public_subnet = "10.0.1.0/24"
+}
