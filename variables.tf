@@ -35,7 +35,7 @@ type = string
    }
    variable "ami" {
      type = map(string)
-     type    = "map"
+#     type    = "map"
      description = "A map of AMIs."
      default = {}
    }
