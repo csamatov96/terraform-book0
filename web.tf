@@ -1,6 +1,6 @@
-provider "aws" {
-  region = var.region
-}
+#provider "aws" {
+#  region = var.region
+#}
 
 module "vpc_basic" {
   source        = "github.com/turnbullpress/tf_vpc_basic.git?ref=v0.0.1"
